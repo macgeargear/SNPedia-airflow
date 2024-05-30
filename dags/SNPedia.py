@@ -30,7 +30,7 @@ def _get_rs_links(disease: str) -> List[str]:
     Get the list of rs links from the SNPedia/disease page
     '''
     
-    doc_link = f'{utils.SNPedia_URL}/{disease}'
+    doc_link = f'{utils.SNPedia_BASE_URL}/{disease}'
     logging.info('get data from doc_link: %s', doc_link)
     content = utils.get_html_content(doc_link)
     if not content:
@@ -44,7 +44,6 @@ def _get_rs_links(disease: str) -> List[str]:
         rs_links.append(rs_link)
     logging.info('List of rs links: %s', rs_links)
     return rs_links
-
 
 def _get_all_data_from_rs_links(**context):
     '''

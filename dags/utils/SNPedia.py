@@ -4,12 +4,13 @@ import requests
 from bs4 import BeautifulSoup
 from datetime import datetime
 
-SNPedia_URL = 'https://www.snpedia.com/index.php'
+SNPedia_BASE_URL = 'https://www.snpedia.com/index.php'
+DISEASE_LIST = ['Heart_disease', 'Stroke', 'High_blood_pressure', 'Chronic_kidney_disease']
 
 def checkIfNone(thingToCheck):
     return True if thingToCheck in ['N/A', 'NA', '', 'nan', "None", "null", "Null", None] else False
 
-def get_html_content(doc_link: str=SNPedia_URL) -> str:
+def get_html_content(doc_link: str=SNPedia_BASE_URL) -> str:
     '''
     Get the HTML content from the given URL
     '''
@@ -35,7 +36,7 @@ def get_data_from_rs_link(rs_link: str) -> dict:
     '''
 
     valid_rs_link = rs_link[0].upper() + rs_link[1:]
-    content = get_html_content(f'{SNPedia_URL}/{valid_rs_link}')
+    content = get_html_content(f'{SNPedia_BASE_URL}/{valid_rs_link}')
     if not content:
         return None
     

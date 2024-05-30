@@ -1,11 +1,21 @@
 # SNPedia-airflow
 
-this repo is for learning how data pipeline works using apache airflow
+- this repo is for learning how data pipeline works using apache airflow
+
+- the disease lists: ['Heart_disease', 'Stroke', 'High_blood_pressure', 'Chronic_kidney_disease']
 
 **Setup airflow**
 download `docker-compose.yaml` file from this command
+
 ```sh
 curl -LfO 'https://airflow.apache.org/docs/apache-airflow/2.9.1/docker-compose.yaml'
+```
+
+create `Dockerfile` (for install external python libraryies )
+
+```Dockerfile
+FROM apache/airflow:latest
+RUN pip install --no-cache-dir pymongo python-dotenv bs4
 ```
 
 **Import the librarys**
@@ -47,8 +57,32 @@ end = EmptyOperator(task_id="end") // Just for testing
 ```
 
 **complete the DAG**
+
 ```python
 start >> get_rs_links >> get_all_data_from_rs_links >> save_to_mongo_db >> end
 ```
 
+**the shape of data**
 
+```ts
+{
+  disease: string,
+  data: {
+    GenoMagSummary:
+      { Geno: string,
+        Mag: string,
+        Summary: string
+      }[],
+    updatedAt: Date,
+    Reference: string,
+    Chromosome: string,
+    Position: string,
+    Gene: string,
+    "isA": string,
+    "RelatedPublications": {
+      PMID: string,
+      description: string,
+    }[],
+  }[]
+}[]
+```
