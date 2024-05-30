@@ -1,2 +1,10 @@
 logs/
 .git/
+ENV
+credentials
+.ipynb_checkpoints
+__pycache__
+_SUCCESS*
+.DS_Store
+.env
+.venv/
