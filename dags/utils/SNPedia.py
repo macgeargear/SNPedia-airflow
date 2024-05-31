@@ -1,8 +1,10 @@
 import logging
 import requests
+import re
 
 from bs4 import BeautifulSoup
 from datetime import datetime
+
 
 SNPedia_BASE_URL = 'https://www.snpedia.com/index.php'
 DISEASE_LIST = ['Heart_disease', 'Stroke', 'High_blood_pressure', 'Chronic_kidney_disease']
@@ -43,7 +45,7 @@ def get_data_from_rs_link(rs_link: str) -> dict:
     soup = BeautifulSoup(content, 'html.parser')
 
     tables =  soup.find_all('table')
-    data = {'GenoMagSummary': [], 'updatedAt': datetime.now().isoformat()}
+    data = {'id': rs_link, 'GenoMagSummary': [], 'relatedPublications': [], 'updatedAt': datetime.now().isoformat()}
 
     for table in tables:
         for row in table.find_all('tr'):
@@ -79,6 +81,44 @@ def get_data_from_rs_link(rs_link: str) -> dict:
         summary = cells[2].text.strip()
 
         data['GenoMagSummary'].append({'Geno': geno[1:-1], 'Mag': mag, 'Summary': summary})
-        
+
+    data['relatedPublications'] += extract_related_publications(soup.find_all('p')) + extract_related_publications(soup.find_all('li'))
+
     logging.info(f'data from rs link {rs_link}: {data}')
     return data
+
+def extract_pmid_and_description(text):
+    '''
+    Extracts the PMID (PubMed ID) and description from the given text.
+    '''
+
+    PMID_PATTERN = r'\[PMID (\d+)\]'
+    DESCRIPTION_PATTERN = r'(.*?)\[PMID \d+\](.*)'
+
+    pmid_match = re.search(PMID_PATTERN, text)
+    pmid = pmid_match.group(1) if pmid_match else None
+
+    description_match = re.search(DESCRIPTION_PATTERN, text)
+    if description_match:
+        description = (description_match.group(1) + description_match.group(2)).strip()
+    else:
+        description = text.strip()  # If no PMID is found, return the entire text as description
+
+    return pmid, description
+
+def extract_related_publications(contents):
+    '''
+    Extracts the related publications from the given contents.
+    '''
+
+    related_publications = []
+    for content in contents:
+        if 'PMID' not in content.text:
+            continue
+        pmid, description = extract_pmid_and_description(content.text)
+        related_publications.append({
+            'PMID': pmid,
+            'description': description
+        })
+    print(related_publications)
+    return related_publications

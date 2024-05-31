@@ -1,5 +1,6 @@
 [
   {
+    "id": "rs17696736",
     "GenoMagSummary": [
       { "Geno": "A;A", "Mag": "0", "Summary": "normal" },
       { "Geno": "A;G", "Mag": "2", "Summary": "1.34x risk of type-1 diabetes" },
@@ -10,7 +11,89 @@
       },
       { "Geno": "T;T", "Mag": "0", "Summary": "" }
     ],
-    "updatedAt": "2024-05-30T15:45:14.374895",
+    "relatedPublications": [
+      {
+        "PMID": "17554300",
+        "description": "The risk allele (oriented to the dbSNP entry) is (G); the odds ratio associated with heterozygotes is 1.34 (CI 1.16-1.53), and for homozygotes, 1.94 (CI 1.65-2.29)."
+      },
+      {
+        "PMID": "17554260",
+        "description": "In an expanded follow-up study of >6,000 controls and 6,000 patients, the heterozygote odds ratio for this SNP was recalculated to be 1.22 (CI 1.15\u00e2\u20ac\u201c1.28)."
+      },
+      {
+        "PMID": "19565500",
+        "description": "Variants in TNFAIP3, STAT4, and C12orf30 loci associated with multiple autoimmune diseases are also associated with juvenile idiopathic arthritis"
+      },
+      {
+        "PMID": "18077426",
+        "description": "Runs of homozygosity reveal highly penetrant recessive loci in schizophrenia."
+      },
+      {
+        "PMID": "18224312",
+        "description": "Pharmacogenetics: data, concepts and tools to improve drug discovery and drug treatment."
+      },
+      {
+        "PMID": "18423522",
+        "description": "Estimating odds ratios in genome scans: an approximate conditional likelihood approach."
+      },
+      {
+        "PMID": "18533027",
+        "description": "Worldwide population differentiation at disease-associated SNPs."
+      },
+      {
+        "PMID": "18556337",
+        "description": "Impact of diabetes susceptibility loci on progression from pre-diabetes to diabetes in at-risk individuals of the diabetes prevention trial-type 1 (DPT-1)."
+      },
+      {
+        "PMID": "18840781",
+        "description": "Follow-up analysis of genome-wide association data identifies novel loci for type 1 diabetes."
+      },
+      {
+        "PMID": "18853133",
+        "description": "Gene variants influencing measures of inflammation or predisposing to autoimmune and inflammatory diseases are not associated with the risk of type 2 diabetes."
+      },
+      {
+        "PMID": "19140132",
+        "description": "Unbiased estimation of odds ratios: combining genomewide association scans with replication studies."
+      },
+      {
+        "PMID": "19359276",
+        "description": "Identification of AF4/FMR2 family, member 3 (AFF3) as a novel rheumatoid arthritis susceptibility locus and confirmation of two further pan-autoimmune susceptibility genes."
+      },
+      {
+        "PMID": "19639606",
+        "description": "Correcting \"winner's curse\" in odds ratios from genomewide association findings for major complex human diseases."
+      },
+      {
+        "PMID": "19838195",
+        "description": "A large-scale replication study identifies TNIP1, PRDM1, JAZF1, UHRF1BP1 and IL10 as risk loci for systemic lupus erythematosus."
+      },
+      {
+        "PMID": "19956105",
+        "description": "Reassessment of the type I diabetes association of the OAS1 locus."
+      },
+      {
+        "PMID": "19956108",
+        "description": "Analysis of 55 autoimmune disease and type II diabetes loci: further confirmation of chromosomes 4q27, 12q13.2 and 12q24.13 as type I diabetes loci, and support for a new locus, 12q13.3-q14.1."
+      },
+      {
+        "PMID": "20089178",
+        "description": "Allelic variants in the PHTF1-PTPN22, C12orf30 and CD226 regions as candidate susceptibility factors for the type 1 diabetes in the Estonian population."
+      },
+      {
+        "PMID": "20369022",
+        "description": "Candidate causal regulatory effects by integration of expression QTLs with complex trait genetic associations."
+      },
+      {
+        "PMID": "20722033",
+        "description": "The susceptibility loci juvenile idiopathic arthritis shares with other autoimmune diseases extend to PTPN2, COG6, and ANGPT1."
+      },
+      {
+        "PMID": "23297363",
+        "description": "Genome-wide association study identifies loci on 12q24 and 13q32 associated with tetralogy of Fallot."
+      }
+    ],
+    "updatedAt": "2024-05-31T05:12:45.643437",
     "Reference": "GRCh38 38.1/141",
     "Chromosome": "12",
     "Position": "112049014",
@@ -18,8 +101,10 @@
     "is a": "snp"
   },
   {
+    "id": "rs16851055",
     "GenoMagSummary": [],
-    "updatedAt": "2024-05-30T15:45:16.456199",
+    "relatedPublications": [],
+    "updatedAt": "2024-05-31T05:12:46.156802",
     "Reference": "GRCh38 38.1/141",
     "Chromosome": "3",
     "Position": "141080371",
@@ -27,14 +112,17 @@
     "is a": "snp"
   },
   {
+    "id": "rs12646447",
     "GenoMagSummary": [],
-    "updatedAt": "2024-05-30T15:45:18.065931",
+    "relatedPublications": [],
+    "updatedAt": "2024-05-31T05:12:46.665968",
     "Reference": "GRCh38 38.1/141",
     "Chromosome": "4",
     "Position": "110778170",
     "is a": "snp"
   },
   {
+    "id": "rs12425791",
     "GenoMagSummary": [
       {
         "Geno": "A;A",
@@ -48,7 +136,73 @@
       },
       { "Geno": "G;G", "Mag": "0", "Summary": "normal" }
     ],
-    "updatedAt": "2024-05-30T15:45:20.166678",
+    "relatedPublications": [
+      {
+        "PMID": "19369658",
+        "description": "Results of this 20,000+ person study suggested that each minor (risk) allele at these two SNPs increases the hazard ratio for total stroke about 1.31 (CI: 1.19 - 1.44) and for ischemic stroke by about 1.40 (CI: 1.27 - 1.56). The corresponding population attributable risks were 11 to 13% for total stroke and 14 to 17% for ischemic stroke, which is fairly high for this sort of SNP."
+      },
+      {
+        "PMID": "21722921",
+        "description": "NINJ2 polymorphism is associated with ischemic stroke in Chinese Han population"
+      },
+      {
+        "PMID": "21832970",
+        "description": "Association between two key SNPs on chromosome 12p13 and ischemic stroke in Chinese Han population"
+      },
+      {
+        "PMID": "22011019",
+        "description": "Association of two single nucleotide polymorphisms from genomewide association studies with clinical phenotypes of cerebral ischemia"
+      },
+      {
+        "PMID": "22212150",
+        "description": "Association between genetic variant on Chromosome 12p13 and stroke survival and recurrence: A one year prospective study in Taiwan"
+      },
+      {
+        "PMID": "22429733",
+        "description": "NINJ2 SNP may affect the onset age of first-ever ischemic stroke without increasing silent cerebrovascular lesions"
+      },
+      {
+        "PMID": "20448654",
+        "description": "Association study of the polymorphisms on chromosome 12p13 with atherothrombotic stroke in the Japanese population."
+      },
+      {
+        "PMID": "21148441",
+        "description": "Genetic variant on chromosome 12p13 does not show association to ischemic stroke in 3 Swedish case-control studies."
+      },
+      {
+        "PMID": "21376321",
+        "description": "No evidence for association of 12p13 SNPs rs11833579 and rs12425791 within NINJ2 gene with ischemic stroke in Chinese Han population."
+      },
+      {
+        "PMID": "22297388",
+        "description": "Association between 12p13 SNPs rs11833579/rs12425791 near NINJ2 gene and ischemic stroke in East Asian population: evidence from a meta-analysis."
+      },
+      {
+        "PMID": "23270316",
+        "description": "Association between the Single Nucleotide Polymorphism rs12425791 and Ischemic Stroke in Chinese Populations: New Data and Meta-analysis"
+      },
+      {
+        "PMID": "23596786",
+        "description": "[Correlation study on 12p13 single nucleotide polymorphism rs12425791 and Chinese medical syndrome types in ischemic stroke patients of the Han nationality]"
+      },
+      {
+        "PMID": "22938733",
+        "description": "Lack of association between two key SNPs on chromosome 12p13 and ischemic stroke in Chinese Uyghur population"
+      },
+      {
+        "PMID": "22795341",
+        "description": "The rs11833579 and rs12425791 polymorphisms and risk of ischemic stroke in an Asian population: a meta-analysis."
+      },
+      {
+        "PMID": "26312640",
+        "description": "Impact of chromosome 12p13 variants on ischemic stroke risk"
+      },
+      {
+        "PMID": "26687183",
+        "description": "A Novel Functional Polymorphism in the NINJ2 Promoter Predicts Risk of Large Artery Atherosclerotic Stroke."
+      }
+    ],
+    "updatedAt": "2024-05-31T05:12:47.175114",
     "Reference": "GRCh38 38.1/141",
     "Chromosome": "12",
     "Position": "674318",
@@ -56,6 +210,7 @@
     "is a": "snp"
   },
   {
+    "id": "rs6797312",
     "GenoMagSummary": [
       {
         "Geno": "A;A",
@@ -69,7 +224,13 @@
       },
       { "Geno": "T;T", "Mag": "", "Summary": "normal" }
     ],
-    "updatedAt": "2024-05-30T15:45:21.752573",
+    "relatedPublications": [
+      {
+        "PMID": "17961231",
+        "description": "In a study of 224 female patients (from 15-49 years old) equally divided between Caucasians and African-Americans, the rs6797312(A) allele was associated with higher risk (odds ratio 2.05, p=0.023) for early-onset ischemic stroke in Caucasians but showed no association in African-Americans."
+      }
+    ],
+    "updatedAt": "2024-05-31T05:12:48.242287",
     "Reference": "GRCh38 38.1/141",
     "Chromosome": "3",
     "Position": "167769515",
@@ -77,8 +238,10 @@
     "is a": "snp"
   },
   {
+    "id": "rs4792143",
     "GenoMagSummary": [],
-    "updatedAt": "2024-05-30T15:45:23.283461",
+    "relatedPublications": [],
+    "updatedAt": "2024-05-31T05:12:48.671154",
     "Reference": "GRCh38 38.1/141",
     "Chromosome": "17",
     "Position": "11482573",
@@ -86,6 +249,7 @@
     "is a": "snp"
   },
   {
+    "id": "rs2200733",
     "GenoMagSummary": [
       {
         "Geno": "C;C",
@@ -103,7 +267,169 @@
         "Summary": "1.5x increased risk of Atrial Fibrillation and ischemic stroke."
       }
     ],
-    "updatedAt": "2024-05-30T15:45:24.507251",
+    "relatedPublications": [
+      {
+        "PMID": "17603472",
+        "description": "Two SNPs from chromosome 4q25, rs2200733 and rs10033464, were found to be associated with atrial fibrillation in a study of both European and Asian populations. The odds ratio associated with one or more copies of either risk allele was ~1.4x."
+      },
+      {
+        "PMID": "18931155",
+        "description": "The results derived from a study of 78 Italians with atrial fibrillation (AF) and atrial flutter (AFL) agree with previously reported findings from the Icelandic study ([PMID 17603472]), which also found that the rs2200733(T) was associated with AF/AFL disease."
+      },
+      {
+        "PMID": "18991354",
+        "description": "In 1,661 Icelandic ischemic stroke samples and two large European replication sets combined, rs2200733 was associated with cardioembolic stroke (CES) (odds ratio 1.54, p = 8.05 x 10e-9). rs2200733 even showed association to ischemic stroke that was not classified as cardioembolic stroke."
+      },
+      {
+        "PMID": "19141561",
+        "description": "rs2200733 and rs10033464 are strongly associated with AF in four cohorts of European descent."
+      },
+      {
+        "PMID": "21414601",
+        "description": "A study of 1,166 Caucasian patients following coronary artery bypass grafting concluded that rs2200733(T) carriers had increased long-term mortality (hazard ratio 1.57, CI: 1.10 - 2.24) and higher risk for postoperative atrial fibrillation (odds ratio 1.41, CI: 1.04 - 1.91)."
+      },
+      {
+        "PMID": "24270849",
+        "description": "rs2200733 was found to be associated with atrial fibrillation based on a study by the eMERGE network in which electronic medical records were searched to find clinical associations associated with selected SNPs."
+      },
+      {
+        "PMID": "19707791",
+        "description": "Assessment of association of rs2200733 on chromosome 4q25 with atrial fibrillation and ischemic stroke in a Chinese Han population"
+      },
+      {
+        "PMID": "20733104",
+        "description": "Independent Susceptibility Markers for Atrial Fibrillation on Chromosome 4q25"
+      },
+      {
+        "PMID": "21574119",
+        "description": "The rs2200733 variant on chromosome 4q25 is a risk factor for cardioembolic stroke related to atrial fibrillation in Polish patients"
+      },
+      {
+        "PMID": "21793630",
+        "description": "rs2200733(T;T) individuals have a mean PR interval (a risk factor for atrial fibrillation) of 189.5 \u00b1 35.8 ms in comparison to mean PR intervals of 172.0 \u00b1 29.0 and 171.0 \u00b1 27.1 ms for (C;T) and (C;C) genotypes, respectively (p = 0.013 and p = 0.0056), according to this study."
+      },
+      {
+        "PMID": "21760908",
+        "description": "Association between variants on chromosome 4q25, 16q22 and 1q21 and atrial fibrillation in the Polish population"
+      },
+      {
+        "PMID": "22384221",
+        "description": "Characterization of Genome-Wide Association-Identified Variants for Atrial Fibrillation in African Americans"
+      },
+      {
+        "PMID": "22336519",
+        "description": "Genetic loci on chromosomes 4q25, 7p31, and 12p12 are associated with onset of lone atrial fibrillation before the age of 40 years"
+      },
+      {
+        "PMID": "18224312",
+        "description": "Pharmacogenetics: data, concepts and tools to improve drug discovery and drug treatment."
+      },
+      {
+        "PMID": "19359634",
+        "description": "Update on the genetics of stroke and cerebrovascular disease 2008."
+      },
+      {
+        "PMID": "19597492",
+        "description": "Variants in ZFHX3 are associated with atrial fibrillation in individuals of European ancestry."
+      },
+      {
+        "PMID": "20170812",
+        "description": "Chromosome 4q25 variants and atrial fibrillation recurrence after catheter ablation."
+      },
+      {
+        "PMID": "20173747",
+        "description": "Common variants in KCNN3 are associated with lone atrial fibrillation."
+      },
+      {
+        "PMID": "20335276",
+        "description": "PheWAS: demonstrating the feasibility of a phenome-wide scan to discover gene-disease associations."
+      },
+      {
+        "PMID": "20606429",
+        "description": "Association of RS2200733 but not RS10033464 on 4q25 with atrial fibrillation based on the recessive model in a Taiwanese population."
+      },
+      {
+        "PMID": "20676228",
+        "description": "Lone AF - etiologic factors and genetic insights into pathophysiolgy."
+      },
+      {
+        "PMID": "21481830",
+        "description": "Uncovering an intermediate phenotype associated with rs2200733 at 4q25 in lone atrial fibrillation."
+      },
+      {
+        "PMID": "23130627",
+        "description": "Variant rs2200733 on Chromosome 4q25 Confers Increased Risk of Atrial Fibrillation: Evidence From a Meta-Analysis"
+      },
+      {
+        "PMID": "23132824",
+        "description": "Genetic polymorphisms confer risk of atrial fibrillation in patients with heart failure: a population-based study"
+      },
+      {
+        "PMID": "24016508",
+        "description": "African American race but not genome-wide ancestry is negatively associated with atrial fibrillation among postmenopausal women in the Women's Health Initiative"
+      },
+      {
+        "PMID": "24161141",
+        "description": "A Common Variant on Chromosome 4q25 is Associated With Prolonged PR Interval in Subjects With and Without Atrial Fibrillation"
+      },
+      {
+        "PMID": "22818067",
+        "description": "Chromosome 4q25 variants are genetic modifiers of rare ion channel mutations associated with familial atrial fibrillation."
+      },
+      {
+        "PMID": "23178686",
+        "description": "Common atrial fibrillation risk alleles at 4q25 predict recurrence after catheter-based atrial fibrillation ablation."
+      },
+      {
+        "PMID": "23428961",
+        "description": "Common genetic polymorphism at 4q25 locus predicts atrial fibrillation recurrence after successful cardioversion."
+      },
+      {
+        "PMID": "24065534",
+        "description": "Rs2200733 and rs10033464 on chromosome 4q25 confer risk of cardioembolic stroke: an updated meta-analysis"
+      },
+      {
+        "PMID": "25020763",
+        "description": "P378Variant rs2200733 on chromosome 4q25 independently confers increased risk of atrial fibrillation in a greek population"
+      },
+      {
+        "PMID": "25494715",
+        "description": "Incidence of Dementia in Relation to Genetic Variants at PITX2, ZFHX3, and ApoE \u03b54 in Atrial Fibrillation Patients"
+      },
+      {
+        "PMID": "25684755",
+        "description": "Common Genetic Variants and Response to Atrial Fibrillation Ablation"
+      },
+      {
+        "PMID": "25711478",
+        "description": "Association of GWAS-Supported Variants rs2200733 and rs6843082 on Chromosome 4q25 with Ischemic Stroke in the Southern Chinese Han Population"
+      },
+      {
+        "PMID": "26005361",
+        "description": "Association of common variations on chromosome 4q25 and left atrial volume in patients with atrial fibrillation"
+      },
+      {
+        "PMID": "26021244",
+        "description": "Association Between rs2200733 Polymorphism on Chromosome 4q25 and Atrial Fibrillation in a Greek Population"
+      },
+      {
+        "PMID": "26267381",
+        "description": "Molecular Basis of Gene-Gene Interaction: Cyclic Cross-Regulation of Gene Expression and Post-GWAS Gene-Gene Interaction Involved in Atrial Fibrillation"
+      },
+      {
+        "PMID": "28258728",
+        "description": "Relation of Obstructive Sleep Apnea and a Common Variant at Chromosome 4q25 to Atrial Fibrillation."
+      },
+      {
+        "PMID": "29624624",
+        "description": "Genetic modulation of atrial fibrillation risk in a Hispanic/Latino cohort."
+      },
+      {
+        "PMID": "30177054",
+        "description": "Atrial fibrillation associated genetic variation near PITX2 gene increases the risk of preeclampsia."
+      }
+    ],
+    "updatedAt": "2024-05-31T05:12:49.369833",
     "Reference": "GRCh38 38.1/141",
     "Chromosome": "4",
     "Position": "110789013",
@@ -111,16 +437,25 @@
     "is a": "snp"
   },
   {
+    "id": "rs2084898",
     "GenoMagSummary": [],
-    "updatedAt": "2024-05-30T15:45:25.150422",
+    "relatedPublications": [],
+    "updatedAt": "2024-05-31T05:12:50.156631",
     "Reference": "GRCh38 38.1/141",
     "Chromosome": "11",
     "Position": "120156040",
     "is a": "snp"
   },
   {
+    "id": "rs1401296",
     "GenoMagSummary": [{ "Geno": "C;T", "Mag": "", "Summary": "" }],
-    "updatedAt": "2024-05-30T15:45:26.871465",
+    "relatedPublications": [
+      {
+        "PMID": "17677000",
+        "description": "Several CVD risk variants were identified: In women, the combination of F5 rs7542281 \u00c3\u2014 THBD rs1042580, together with three single F5 SNPs, was associated with CVD events. Among men, PROC rs1041296, when combined with either ICAM1 rs5030341 or F5 rs2269648, was associated with total mortality. As a single variant, PROC rs1401296, together with the F5 Leiden mutation, was associated with ischemic stroke events."
+      }
+    ],
+    "updatedAt": "2024-05-31T05:12:51.123303",
     "Reference": "GRCh38 38.1/141",
     "Chromosome": "2",
     "Position": "127431732",
@@ -128,8 +463,10 @@
     "is a": "snp"
   },
   {
+    "id": "rs1364044",
     "GenoMagSummary": [],
-    "updatedAt": "2024-05-30T15:45:28.490860",
+    "relatedPublications": [],
+    "updatedAt": "2024-05-31T05:12:52.096941",
     "Reference": "GRCh38 38.1/141",
     "Chromosome": "5",
     "Position": "33879687",
@@ -137,16 +474,20 @@
     "is a": "snp"
   },
   {
+    "id": "rs556621",
     "GenoMagSummary": [],
-    "updatedAt": "2024-05-30T15:45:30.136535",
+    "relatedPublications": [],
+    "updatedAt": "2024-05-31T05:12:53.110940",
     "Reference": "GRCh38 38.1/141",
     "Chromosome": "6",
     "Position": "44626422",
     "is a": "snp"
   },
   {
+    "id": "rs469568",
     "GenoMagSummary": [],
-    "updatedAt": "2024-05-30T15:45:31.674897",
+    "relatedPublications": [],
+    "updatedAt": "2024-05-31T05:12:54.145333",
     "Reference": "GRCh38 38.1/142",
     "Chromosome": "5",
     "Position": "179236407",
@@ -154,19 +495,44 @@
     "is a": "snp"
   },
   {
+    "id": "rs225132",
     "GenoMagSummary": [],
-    "updatedAt": "2024-05-30T15:45:33.251600",
+    "relatedPublications": [],
+    "updatedAt": "2024-05-31T05:12:55.141709",
     "Reference": "GRCh38 38.1/142",
     "Chromosome": "1",
     "Position": "8035440",
     "is a": "snp"
   },
   {
+    "id": "rs173686",
     "GenoMagSummary": [
       { "Geno": "A;G", "Mag": "", "Summary": "" },
       { "Geno": "T;T", "Mag": "0", "Summary": "" }
     ],
-    "updatedAt": "2024-05-30T15:45:35.058118",
+    "relatedPublications": [
+      {
+        "PMID": "16917090",
+        "description": "The presence of an rs173686(C) allele has been linked to increased risk of a certain type of stroke, Intracranial Aneurysm, in a population of Dutch adults."
+      },
+      {
+        "PMID": "18484070",
+        "description": "A study of 240 Chinese Han nationality patients with at least one intracranial aneurysm and matched controls did not replicate this result."
+      },
+      {
+        "PMID": "16917090",
+        "description": "Note: the dbSNP sequence entry for this SNP represents the noncoding strand, and is thus the reverse complement compared to the SNP as referred to in ."
+      },
+      {
+        "PMID": "30121816",
+        "description": "Genetic Risk Factors for Intracranial Aneurysm in the Kazakh Population."
+      },
+      {
+        "PMID": "31970092",
+        "description": "The Association between Genes Polymorphisms of Heparan Sulfate Proteoglycan 2 (HSPG2) and Chondroitin Sulfate Proteoglycan 2 (CSPG2) and Intracranial Aneurysm Susceptibility: A Meta-Analysis."
+      }
+    ],
+    "updatedAt": "2024-05-31T05:12:56.090565",
     "Reference": "GRCh38 38.1/141",
     "Chromosome": "5",
     "Position": "83515681",
@@ -174,8 +540,10 @@
     "is a": "snp"
   },
   {
+    "id": "rs161802",
     "GenoMagSummary": [],
-    "updatedAt": "2024-05-30T15:45:35.778410",
+    "relatedPublications": [],
+    "updatedAt": "2024-05-31T05:12:57.102280",
     "Reference": "GRCh38 38.1/141",
     "Chromosome": "1",
     "Position": "7982766",
@@ -183,6 +551,7 @@
     "is a": "snp"
   },
   {
+    "id": "rs6025",
     "GenoMagSummary": [
       {
         "Geno": "A;A",
@@ -196,7 +565,234 @@
         "Summary": "normal/common risk of thrombosis"
       }
     ],
-    "updatedAt": "2024-05-30T15:45:36.876653",
+    "relatedPublications": [
+      {
+        "PMID": "28373160",
+        "description": "In a 2017 study using UK Biobank, based on 3290 VTE cases and 116\u2009868 controls, the odds ratio for a polymorphism involving the minor risk allele was 3.5. They also found higher odds for venous thromboembolism in overweight individuals (+1.57 for every 1 SD higher BMI)."
+      },
+      {
+        "PMID": "23900608",
+        "description": "In a 2013 meta-analysis of 31 databases, the analysis of Factor V rs6025 variants was based on 9,081 cases and 17,513 controls. The polymorphic variant risk for Venous Thromboembolism was overall OR: 4.38. The risk was greater in younger subjects (<45 years old, OR: 5.43; \u226545 years old, OR: 3.71). Slightly higher risk appeared in men (OR: 5.06) and in women taking oral contraceptives (OR: 6.10). The AG polymorphic variant was associated with recurrent thrombosis (recurrent VTE event, OR: 5.81; no recurrence reported, OR: 3.95). The higher risks were for venous thrombosis without evidence of pulmonary embolism (OR: 4.49) or a cerebral venous sinus thrombosis (OR: 4.14). The AA homozygous variant was rarer, and its risk was significantly higher at 11.45 but was based on fewer individuals (116 subjects among cases and 24 controls). Independent risk was seen in variants of the PT20210A or Factor 2 SNP at i3002432 (also known as rs1799963 )"
+      },
+      {
+        "PMID": "14996674",
+        "description": "Other studies have come to similar conclusions. In a 2004 study of over 9,000 Caucasian adults in the Danish population, rs6025(A;G) and rs6025(A;A) genotypes had 2.7x and 18x higher risk for venous thromboembolism, respectively, than rs6025(G;G) individuals. The lowest absolute 10-year risks for venous thromboembolism for (A;G) and (A;A) genotypes were 0.7% (CI: 0.5% to 1.0%) and 3% (CI: 1% to 8%) for nonsmokers younger than 40 years of age with a body mass index below 25 kg/m2, and the corresponding highest risks were 10% (CI: 7% to 14%) and 51% (CI: 13% to 100%) for overweight smokers over 60."
+      },
+      {
+        "PMID": "10666427",
+        "description": "In a study done in the year 2000 on 119 women, it was found that women who are pregnant and rs6025(A) carriers could be at risk for obstetric complications, including pre-eclampsia or venous thromboembolism, especially if they were also prothrombin rs1799963 heterozygotes and/or have a family history of thrombosis. They concluded that if you assume an overall risk rate of 1 in 1500 pregnancies, the risk of thrombosis among rs6025(A)  carriers by itself would be 0.2 percent (1 in 500); among carriers of the prothrombin rs1799963(A) by itself, would be 0.5 percent (1 in 200); and among carriers of both variant SNPs, 4.6 percent (about 1 in 20)."
+      },
+      {
+        "PMID": "16413847",
+        "description": "A 2006 review article of 10 previous studies found that women who are rs6025(A) carriers also are at increased risk for venous thromboembolism and perhaps ischemic stroke when they take combined oral contraceptives (i.e. \"the pill\"). A 2006 literature meta-analysis from a total of 10 studies concluded that \"good\" evidence existed for a greater risk of venous thromboembolism (risk ratios of 1.3-25.1) and cerebral vein or cerebral sinus thrombosis when comparing heterozygotes taking such contraceptives to heterozygotes who did not."
+      },
+      {
+        "PMID": "15534175",
+        "description": "Additionally, a 2004 meta-analysis involving 18,000 cases and 58,000 controls found an increased risk for ischemic stroke for rs6025(A) carriers. The odds ratio based on a study of ~4,500 patients was 1.33, CI: 1.12-1.58."
+      },
+      {
+        "PMID": "20554945",
+        "description": "Although preliminary, a 2010 study found that women taking tamoxifen as part of their treatment for early-stage breast cancer, those who had a thromboembolic event were nearly five times more likely to have a rs6025(A) allele compared to those who did not have a TE. The authors suggest that postmenopausal women should be evaluated for the rs6025(A) SNP before being given a prescription for tamoxifen if the result would affect the decision."
+      },
+      {
+        "PMID": "20554943",
+        "description": "A related editorial pointed out that tamoxifen on its own is known to increase the risk of thromboembolic events 2-4 fold."
+      },
+      { "PMID": "10477778", "description": "" },
+      {
+        "PMID": "19415820",
+        "description": "The effect of nine common polymorphisms in coagulation factor genes (F2, F5, F7, F12 and F13 ) on the effectiveness of statins: the GenHAT study"
+      },
+      {
+        "PMID": "19786296",
+        "description": "Platelet glycoprotein GP VI 13254C allele is an independent risk factor of premature myocardial infarction"
+      },
+      {
+        "PMID": "21291465",
+        "description": "The association of genetic polymorphisms with cerebral palsy: a meta-analysis"
+      },
+      {
+        "PMID": "21564075",
+        "description": "Resistance to activated protein C is a risk factor for pregnancy-related venous thrombosis in the absence of the F5 rs6025 (factor V Leiden) polymorphism"
+      },
+      {
+        "PMID": "21332313",
+        "description": "Sequence variations in the FII, FV, F13A1, FGB and PAI-1 genes are associated with differences in myocardial perfusion"
+      },
+      {
+        "PMID": "21659962",
+        "description": "Replication of genetic associations in the inflammation, complement, and coagulation pathways with intraventricular hemorrhage in LBW preterm neonates"
+      },
+      {
+        "PMID": "22198364",
+        "description": "The association of inherited thrombophilia and intrauterine fetal death:  a case-control study"
+      },
+      {
+        "PMID": "21913742",
+        "description": "Genetic predictors of response to photodynamictherapy"
+      },
+      {
+        "PMID": "21955043",
+        "description": "Validation of single nucleotide polymorphisms associated with acute rejection in kidney transplant recipients using a large multi-center cohort"
+      },
+      {
+        "PMID": "22421107",
+        "description": "The G534E-polymorphism of the gene encoding the Factor VII-activating protease is a risk factor for venous thrombosis and recurrent events"
+      },
+      {
+        "PMID": "22707612",
+        "description": "Genetic Risk Factors for Thrombosis in Systemic Lupus Erythematosus"
+      },
+      {
+        "PMID": "16846490",
+        "description": "Lemierre's syndrome and genetic polymorphisms: a case report."
+      },
+      {
+        "PMID": "17048007",
+        "description": "Association of warfarin dose with genes involved in its action and metabolism."
+      },
+      {
+        "PMID": "17107626",
+        "description": "Comparison of PrASE and Pyrosequencing for SNP Genotyping."
+      },
+      {
+        "PMID": "17677000",
+        "description": "Combined effects of thrombosis pathway gene variants predict cardiovascular events."
+      },
+      {
+        "PMID": "18513389",
+        "description": "New application of intelligent agents in sporadic amyotrophic lateral sclerosis identifies unexpected specific genetic background."
+      },
+      {
+        "PMID": "18752569",
+        "description": "Factor V Leiden is associated with pre-eclampsia but not with fetal growth restriction: a genetic association study and meta-analysis."
+      },
+      {
+        "PMID": "18936436",
+        "description": "Prevalence in the United States of selected candidate gene variants: Third National Health and Nutrition Examination Survey, 1991-1994."
+      },
+      {
+        "PMID": "19131662",
+        "description": "A meta-analysis of candidate gene polymorphisms and ischemic stroke in 6 study populations: association of lymphotoxin-alpha in nonhypertensive patients."
+      },
+      {
+        "PMID": "19263529",
+        "description": "Genetic risk factors in recurrent venous thromboembolism: A multilocus, population-based, prospective approach."
+      },
+      {
+        "PMID": "19330901",
+        "description": "Association of 77 polymorphisms in 52 candidate genes with blood pressure progression and incident hypertension: the Women's Genome Health Study."
+      },
+      {
+        "PMID": "19536175",
+        "description": "Follow-up of a major linkage peak on chromosome 1 reveals suggestive QTLs associated with essential hypertension: GenNet study."
+      },
+      {
+        "PMID": "19538716",
+        "description": "Thrombotic genetic risk factors and warfarin pharmacogenetic variants in Sao Miguel's healthy population (Azores)."
+      },
+      {
+        "PMID": "19559392",
+        "description": "A candidate gene association study of 77 polymorphisms in migraine."
+      },
+      {
+        "PMID": "19591822",
+        "description": "Prevalence of genetic thrombophilic polymorphisms in the Sri Lankan population--implications for association study design and clinical genetic testing services."
+      },
+      {
+        "PMID": "20031567",
+        "description": "An evaluation of candidate genes of inflammation and thrombosis in relation to the risk of venous thromboembolism: The Women's Genome Health Study."
+      },
+      {
+        "PMID": "20352152",
+        "description": "Association of common genetic variations and idiopathic venous thromboembolism. Results from EDITh, a hospital-based case-control study."
+      },
+      {
+        "PMID": "21422408",
+        "description": "Clotting factor gene polymorphisms and colorectal cancer risk."
+      },
+      {
+        "PMID": "22388798",
+        "description": "Gene panels to help identify subgroups at high and low risk of coronary heart disease among those randomized to antihypertensive treatment: the GenHAT study."
+      },
+      {
+        "PMID": "22540831",
+        "description": "Candidate gene study of genetic thrombophilic polymorphisms in pre-eclampsia and recurrent pregnancy loss in Sinhalese women."
+      },
+      {
+        "PMID": "23015030",
+        "description": "Differential haemostatic risk factors for pregnancy related deep vein thrombosis and pulmonary embolism. A population-based case-control study"
+      },
+      {
+        "PMID": "23018527",
+        "description": "Necessity and risks of arterial blood sampling in healthy volunteer studies"
+      },
+      {
+        "PMID": "23132613",
+        "description": "Genetic association studies in pre-eclampsia: systematic meta-analyses and field synopsis"
+      },
+      {
+        "PMID": "23150947",
+        "description": "Single nucleotide polymorphisms and the risk of venous thrombosis: results from a Danish case-cohort study"
+      },
+      {
+        "PMID": "23274712",
+        "description": "Genetic polymorphisms and the risk of myocardial infarction in patients under 45 years of age."
+      },
+      {
+        "PMID": "23533563",
+        "description": "Novel risk factors for premature peripheral arterial occlusive disease in non-diabetic patients: a case-control study."
+      },
+      {
+        "PMID": "24908450",
+        "description": "A genetic association study of D-dimer levels with 50K SNPs from a candidate gene chip in four ethnic groups"
+      },
+      {
+        "PMID": "25028703",
+        "description": "Maternal Genotype and Severe Preeclampsia: A HuGE Review"
+      },
+      {
+        "PMID": "25119470",
+        "description": "Single Nucleotide Polymorphisms Other than Factor V Leiden Are Associated with Coagulopathy and Osteonecrosis of the Femoral Head in Chinese Patients"
+      },
+      {
+        "PMID": "25210051",
+        "description": "Genetic Variations Associated with Recurrent Venous Thrombosis"
+      },
+      {
+        "PMID": "24816905",
+        "description": "Single nucleotide variants in the protein C pathway and mortality in dialysis patients"
+      },
+      {
+        "PMID": "29094466",
+        "description": "Joint effects of prothrombotic genotypes and body height on the risk of venous thromboembolism: The Troms\u00f8 Study."
+      },
+      {
+        "PMID": "30773804",
+        "description": "Effect of prothrombotic genotypes on the risk of venous thromboembolism in patients with and without ischemic stroke.The Troms\u00d8 Study."
+      },
+      {
+        "PMID": "32110755",
+        "description": "Myocardial infarction, prothrombotic genotypes, and venous thrombosis risk: The Troms\u00f8 Study."
+      },
+      {
+        "PMID": "32402998",
+        "description": "Prothrombotic genotypes and risk of major bleeding in patients with incident venous thromboembolism."
+      },
+      {
+        "PMID": "32671915",
+        "description": "Combined effects of five prothrombotic genotypes and cancer on the risk of a first venous thromboembolic event."
+      },
+      {
+        "PMID": "32952508",
+        "description": "Association of Four Missense SNPs with Preeclampsia in Saudi Women."
+      },
+      {
+        "PMID": "33448877",
+        "description": "Prevalence of the Factor V Leiden Mutation Arg534Gln in Western Region of Saudi Arabia: Functional Alteration and Association Study With Different Populations."
+      }
+    ],
+    "updatedAt": "2024-05-31T05:12:58.308720",
     "Reference": "GRCh38 38.1/141",
     "Chromosome": "1",
     "Position": "169549811",
@@ -204,6 +800,7 @@
     "is a": "snp"
   },
   {
+    "id": "rs5443",
     "GenoMagSummary": [
       {
         "Geno": "C;C",
@@ -217,7 +814,189 @@
         "Summary": "viagra is more likely to have an effect. increased metabolic disease risk."
       }
     ],
-    "updatedAt": "2024-05-30T15:45:38.026373",
+    "relatedPublications": [
+      {
+        "PMID": "19560507",
+        "description": "Interaction of serotonin-related genes affects short-term antidepressant response in major depressive disorder"
+      },
+      {
+        "PMID": "19772422",
+        "description": "Common Variants in the G Protein beta3 Subunit Gene and Thyroid Disorders in a Formerly Iodine-Deficient Population"
+      },
+      {
+        "PMID": "19811352",
+        "description": "Lack of an association of GNB3 C825T polymorphism and blood pressure in patients with rheumatoid arthritis"
+      },
+      {
+        "PMID": "21371559",
+        "description": "Effects of C825T polymorphism of the GNB3 gene on availability of dopamine transporter in healthy volunteers-a SPECT study"
+      },
+      {
+        "PMID": "21675276",
+        "description": "[A protective effect of GLY272SER polymorphism of GNB3 gene in development of essential hypertension and its relations with environmental hypertension risk factors]"
+      },
+      {
+        "PMID": "22041889",
+        "description": "Improvement of non-steroidal anti-inflammatory drug-induced gastrointestinal symptoms during proton pump inhibitor treatment: Are g-protein (beta)3 subunit genotype, helicobacter pylori status, and environmental factors response modifiers?"
+      },
+      {
+        "PMID": "22791279",
+        "description": "Association of the C825T polymorphism in the GNB3 gene with obesity and metabolic phenotypes in a Taiwanese population"
+      },
+      {
+        "PMID": "17521439",
+        "description": "Association between 5-HT2A, TPH1 and GNB3 genotypes and response to typical neuroleptics: a serotonergic approach."
+      },
+      {
+        "PMID": "18248681",
+        "description": "Prevalence of common disease-associated variants in Asian Indians."
+      },
+      {
+        "PMID": "18304332",
+        "description": "No evidence for association between BMI and 10 candidate genes at ages 4, 7 and 10 in a large UK sample of twins."
+      },
+      {
+        "PMID": "18308786",
+        "description": "The --1019 C/G polymorphism of the 5-HT(1)A receptor gene is associated with negative symptom response to risperidone treatment in schizophrenia patients."
+      },
+      {
+        "PMID": "18513389",
+        "description": "New application of intelligent agents in sporadic amyotrophic lateral sclerosis identifies unexpected specific genetic background."
+      },
+      {
+        "PMID": "18656447",
+        "description": "Salt consumption-dependent association of the GNB3 gene polymorphism with type 2 DM."
+      },
+      {
+        "PMID": "19131662",
+        "description": "A meta-analysis of candidate gene polymorphisms and ischemic stroke in 6 study populations: association of lymphotoxin-alpha in nonhypertensive patients."
+      },
+      {
+        "PMID": "19263529",
+        "description": "Genetic risk factors in recurrent venous thromboembolism: A multilocus, population-based, prospective approach."
+      },
+      {
+        "PMID": "19303909",
+        "description": "Intensity of opiate withdrawal in relation to the 825C>T polymorphism of the G-protein beta 3 subunit gene."
+      },
+      {
+        "PMID": "19330901",
+        "description": "Association of 77 polymorphisms in 52 candidate genes with blood pressure progression and incident hypertension: the Women's Genome Health Study."
+      },
+      {
+        "PMID": "19360113",
+        "description": "The Role of the PGC1alpha Gly482Ser Polymorphism in Weight Gain due to Intensive Diabetes Therapy."
+      },
+      {
+        "PMID": "19559392",
+        "description": "A candidate gene association study of 77 polymorphisms in migraine."
+      },
+      {
+        "PMID": "19885780",
+        "description": "GNB3 C825T polymorphism and elevated blood pressure."
+      },
+      {
+        "PMID": "20021678",
+        "description": "Evaluation of self-reported ethnicity in a case-control population: the stroke prevention in young women study."
+      },
+      {
+        "PMID": "20359253",
+        "description": "Effect of the common -866G/A polymorphism of the uncoupling protein 2 gene on weight loss and body composition under sibutramine therapy in an obese Taiwanese population."
+      },
+      {
+        "PMID": "20386734",
+        "description": "Further evidence supporting a role for gs signal transduction in severe malaria pathogenesis."
+      },
+      {
+        "PMID": "21172166",
+        "description": "Pharmacogenetics of antidepressant response."
+      },
+      {
+        "PMID": "21210858",
+        "description": "Is there an interaction between BDKRB2 -9/+9 and GNB3 C825T polymorphisms and elite athletic performance?"
+      },
+      {
+        "PMID": "21735268",
+        "description": "[Genotype of the GNB3 C825T polymorphism, A risk factor for the development and course of prostate cancer?]."
+      },
+      {
+        "PMID": "21737952",
+        "description": "Genetic variation in gsalpha protein as a new indicator in screening test for vasovagal syncope."
+      },
+      {
+        "PMID": "22534794",
+        "description": "A two-stage matched case-control study on multiple hypertensive candidate genes in Han Chinese."
+      },
+      {
+        "PMID": "23339167",
+        "description": "Single nucleotide polymorphisms in G protein signaling pathway genes in preeclampsia."
+      },
+      {
+        "PMID": "23733030",
+        "description": "Pharmacogenetics in major depression: a comprehensive meta-analysis."
+      },
+      {
+        "PMID": "26083990",
+        "description": "Influence of P2Y12 polymorphisms on platelet activity but not ex-vivo antiplatelet effect of ticagrelor in healthy Chinese male subjects"
+      },
+      {
+        "PMID": "27660894",
+        "description": "Association of CLOCK, ARNTL, PER2, and GNB3 polymorphisms with diurnal preference in a Korean population."
+      },
+      {
+        "PMID": "29550988",
+        "description": "Genetic variants conferring susceptibility to gastroschisis: a phenomenon restricted to the interaction with the environment?"
+      },
+      {
+        "PMID": "29848945",
+        "description": "Interactions of Genes and Sodium Intake on the Development of Hypertension: A Cohort-Based Case-Control Study."
+      },
+      {
+        "PMID": "30253706",
+        "description": "Association of SDF1\u03b2 (G801A) and GNB3 (C825T) polymorphisms with the incidence and severity of coronary artery disease."
+      },
+      {
+        "PMID": "31137020",
+        "description": "Single Nucleotide Polymorphisms in Chemosensory Pathway Genes GNB3, TAS2R19, and TAS2R38 Are Associated with Chronic Rhinosinusitis."
+      },
+      {
+        "PMID": "31615448",
+        "description": "Candidate single nucleotide polymorphisms of irritable bowel syndrome: a systemic review and meta-analysis."
+      },
+      {
+        "PMID": "10477144",
+        "description": "rs5443(T) allele carriers are 2-3 fold more likely to be obese in Caucasian, Chinese, and African American populations."
+      },
+      {
+        "PMID": "12530935",
+        "description": "rs5443(T) carriers are clearly at higher risk for hypertension, but this review indicates that whether they are also at increased risk for stroke and left ventricular hypertrophy remains controversial."
+      },
+      {
+        "PMID": "12668921",
+        "description": "rs5443(T;T) women gain significantly more weight during pregnancy than rs5443(C;T) or rs5443(C;C) women, and had a significantly higher pre-pregnancy body mass index."
+      },
+      {
+        "PMID": "12576843",
+        "description": "rs5443(T;T) genotypes respond to Viagra better. 91% of them have a \"positive erectile response\" upon taking Viagra, whereas only around 50% of rs5443(C;T) and rs5443(C;C) individuals respond equivalently to the drug. The odds ratio for the positive response was 10.0 (CI: 1.2 - 81.1, p = 0.01)."
+      },
+      {
+        "PMID": "16141801",
+        "description": "rs5443(T;T) patients receiving clozapine over a long term for the treatment of schizophrenia gain significantly more weight (16%) compared to patients carrying at least one rs5443(C) allele in a study of Chinese patients."
+      },
+      {
+        "PMID": "17361120",
+        "description": "rs5443(T) carriers taking triptans for the treatment of migraines or cluster headaches were ~3 fold more likely to respond positively compared with rs5443(C;C) homozygotes (OR 2.96, CI:1.34 - 6.56, p=0.0074) in a study of ~200 Caucasian patients."
+      },
+      {
+        "PMID": "19174793",
+        "description": "rs5443(C;T) genotypes are more prevalent in gastroesophageal reflux disease (GERD) patients relative to healthy controls (odds ratio 1.43, CI: 1.04\u20131.98)."
+      },
+      {
+        "PMID": "19687782",
+        "description": "rs5443(C;C) individuals do not lose weight under sibutramine therapy whereas (C;T) and (T;T) individuals do, based on a study of 131 obese Taiwanese patients. 23andMe blog"
+      }
+    ],
+    "updatedAt": "2024-05-31T05:12:59.493650",
     "Reference": "GRCh38 38.1/141",
     "Chromosome": "12",
     "Position": "6845711",
@@ -225,12 +1004,27 @@
     "is a": "snp"
   },
   {
+    "id": "rs3783799",
     "GenoMagSummary": [
       { "Geno": "A;A", "Mag": "", "Summary": "1.4x increased risk for stroke" },
       { "Geno": "A;G", "Mag": "", "Summary": "1.4x increased risk for stroke" },
       { "Geno": "G;G", "Mag": "0", "Summary": "normal risk" }
     ],
-    "updatedAt": "2024-05-30T15:45:38.743871",
+    "relatedPublications": [
+      {
+        "PMID": "18164711",
+        "description": "The odds ratio for carriers of a risk allele is 1.27 (CI: 1.09-1.48, p=0.0026) compared to individuals homozygous for the non-risk allele, based on studies of ~300 Japanese patients."
+      },
+      {
+        "PMID": "20602195",
+        "description": "PRKCH gene polymorphism is associated with the risk of severe gastric atrophy"
+      },
+      {
+        "PMID": "19703523",
+        "description": "Association of PRKCH gene with lacunar infarction in a local Chinese Han population."
+      }
+    ],
+    "updatedAt": "2024-05-31T05:13:00.461984",
     "Reference": "GRCh38 38.1/141",
     "Chromosome": "14",
     "Position": "61452498",
@@ -238,12 +1032,47 @@
     "is a": "snp"
   },
   {
+    "id": "rs2230500",
     "GenoMagSummary": [
       { "Geno": "A;A", "Mag": "", "Summary": "1.4x increased risk for stroke" },
       { "Geno": "A;G", "Mag": "", "Summary": "1.4x increased risk for stroke" },
       { "Geno": "G;G", "Mag": "0", "Summary": "normal risk" }
     ],
-    "updatedAt": "2024-05-30T15:45:39.458985",
+    "relatedPublications": [
+      {
+        "PMID": "17206144",
+        "description": "In one study of ~1100 Japanese stroke patients, the odds ratio for carriers of the rs2230500(A) risk allele was reported as 1.40 (CI: 1.23-1.59, p=5x10e-7)."
+      },
+      {
+        "PMID": "18164711",
+        "description": "A subsequent study reported the odds ratio for carriers of the (A) allele as 1.27 (CI: 1.09-1.48, p=0.0026) compared to individuals homozygous for rs2230500(G), based on studies of ~300 Japanese patients."
+      },
+      {
+        "PMID": "19069168",
+        "description": "rs2230500 (V374I) and rs9943582 were significantly associated with stroke"
+      },
+      {
+        "PMID": "19520989",
+        "description": "The 1425G/A SNP in PRKCH Is Associated With Ischemic Stroke and Cerebral Hemorrhage in a Chinese Population"
+      },
+      {
+        "PMID": "20602195",
+        "description": "PRKCH gene polymorphism is associated with the risk of severe gastric atrophy"
+      },
+      {
+        "PMID": "17195206",
+        "description": "Genetic association between the PRKCH gene encoding protein kinase Ceta isozyme and rheumatoid arthritis in the Japanese population."
+      },
+      {
+        "PMID": "19703523",
+        "description": "Association of PRKCH gene with lacunar infarction in a local Chinese Han population."
+      },
+      {
+        "PMID": "21358133",
+        "description": "Genome-wide association study for ischemic stroke based on the hisayama study."
+      }
+    ],
+    "updatedAt": "2024-05-31T05:13:01.520486",
     "Reference": "GRCh38 38.1/141",
     "Chromosome": "14",
     "Position": "61457521",

@@ -8,3 +8,4 @@ _SUCCESS*
 .DS_Store
 .env
 .venv/
+test.py
