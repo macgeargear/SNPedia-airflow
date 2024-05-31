@@ -5,9 +5,8 @@ import re
 from bs4 import BeautifulSoup
 from datetime import datetime
 
-
-SNPEDIA_BASE_URL = 'https://www.snpedia.com/index.php'
-DISEASE_LIST = ['Heart_disease', 'Stroke', 'High_blood_pressure', 'Chronic_kidney_disease']
+SNPEDIA_BASE_URL = 'http://www.snpedia.com/index.php'
+DISEASE_LIST = ['Type_2_diabetes', 'Heart_disease', 'Stroke', 'High_blood_pressure', 'Chronic_kidney_disease']
 
 def checkIfNone(thingToCheck):
     return True if thingToCheck in ['N/A', 'NA', '', 'nan', "None", "null", "Null", None] else False
@@ -63,6 +62,8 @@ def get_data_from_rs_link(rs_link: str, affecting_disease: str) -> dict:
                     first_col == 'Chromosome' or 
                     first_col == 'Position' or 
                     first_col == 'Gene' or 
+                    first_col == 'pharmgkb' or
+                    first_col == 'Gnomad' or 
                     first_col == 'is a'):
                 continue
             second_col = cells[1].text.strip()
@@ -111,7 +112,7 @@ def extract_pmid_and_description(text):
 
     return pmid, description
 
-def extract_related_publications(contents):
+def extract_related_publications(contents): # HTML contents
     '''
     Extracts the related publications from the given contents.
     '''
