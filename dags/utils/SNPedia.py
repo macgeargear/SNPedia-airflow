@@ -6,18 +6,19 @@ from bs4 import BeautifulSoup
 from datetime import datetime
 
 
-SNPedia_BASE_URL = 'https://www.snpedia.com/index.php'
+SNPEDIA_BASE_URL = 'https://www.snpedia.com/index.php'
 DISEASE_LIST = ['Heart_disease', 'Stroke', 'High_blood_pressure', 'Chronic_kidney_disease']
 
 def checkIfNone(thingToCheck):
     return True if thingToCheck in ['N/A', 'NA', '', 'nan', "None", "null", "Null", None] else False
 
-def get_html_content(doc_link: str=SNPedia_BASE_URL) -> str:
+def get_html_content(doc_link: str=SNPEDIA_BASE_URL) -> str:
     '''
     Get the HTML content from the given URL
     '''
 
     content = requests.get(doc_link)
+    print(f'getting content from {doc_link}')
     if content.ok:
         content_type = content.headers['Content-Type']
         logging.info('Content-Type: %s', content_type)
@@ -32,20 +33,24 @@ def get_html_content(doc_link: str=SNPedia_BASE_URL) -> str:
 
     return content
 
-def get_data_from_rs_link(rs_link: str) -> dict:
+def get_data_from_rs_link(rs_link: str, affecting_disease: str) -> dict:
     '''
     Get the data from the rs link
     '''
 
     valid_rs_link = rs_link[0].upper() + rs_link[1:]
-    content = get_html_content(f'{SNPedia_BASE_URL}/{valid_rs_link}')
+    content = get_html_content(f'{SNPEDIA_BASE_URL}/{valid_rs_link}')
     if not content:
         return None
     
     soup = BeautifulSoup(content, 'html.parser')
 
     tables =  soup.find_all('table')
-    data = {'id': rs_link, 'GenoMagSummary': [], 'relatedPublications': [], 'updatedAt': datetime.now().isoformat()}
+    data = {'id': rs_link, 
+            'affecting_disease': affecting_disease,
+            'GenoMagSummary': [], 
+            'relatedPublications': [], 
+            }
 
     for table in tables:
         for row in table.find_all('tr'):

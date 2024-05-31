@@ -66,7 +66,7 @@ start >> get_rs_links >> get_all_data_from_rs_links >> save_to_mongo_db >> end
 
 ```ts
 {
-  disease: string,
+  affecting_disease: string,
   data: {
     GenoMagSummary:
       { Geno: string,
