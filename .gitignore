@@ -9,3 +9,4 @@ _SUCCESS*
 .env
 .venv/
 test.py
+*.zip

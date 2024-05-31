@@ -16,16 +16,11 @@ from airflow.utils import timezone
 from bs4 import BeautifulSoup
 from dotenv import load_dotenv
 
-
-
 dotenv_path = '/opt/airflow/.env'
 load_dotenv(dotenv_path)
 MONGODB_CONNECTION_STRING = os.environ.get("MONGODB_CONNECTION_STRING") or "mongodb://root:rootpassword@mongodb:27017"
 
 # function name in PythonOperator should be _<function-name> so that you can distinguish the different between task and function name
-def _say_hello():
-    logging.info("hello from INFO log")
-
 def _get_rs_links_from_diseases(disease: str):
     '''
     Get the list of rs links from the SNPedia/disease page
@@ -103,7 +98,6 @@ def _svae_to_mongodb(jsonData):
 
     latestDocuments = SNPediaCollection.find().sort('updatedAt', pymongo.DESCENDING).limit(1)
     lastUpdatedTime = latestDocuments[0]
-    print(lastUpdatedTime)
     SNPediaCollection.insert_many(data)
     SNPediaCollection.delete_many({ "updatedAt": { "$lte": lastUpdatedTime } })
 
@@ -111,10 +105,11 @@ with DAG(
     "SNPedia",
     start_date=timezone.datetime(2024, 5, 30),
     schedule=None,
-    tags=["SNPedia"],
+    tags=["T2DM"],
 ):
     start = EmptyOperator(task_id="start")
     step = EmptyOperator(task_id="step")
+    end = EmptyOperator(task_id="end")
 
     get_rs_links_from_diseases = [
         PythonOperator(
@@ -141,6 +136,5 @@ with DAG(
         op_kwargs={"jsonData": "/opt/airflow/dags/SNPedia.json"},
     )
 
-    end = EmptyOperator(task_id="end")
 
     start >> get_rs_links_from_diseases >> step >>  get_all_data_from_diseases >> combine_data >> save_to_mongo_db >> end

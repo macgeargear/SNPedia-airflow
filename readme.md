@@ -33,56 +33,63 @@ from dotenv import load_dotenv
 **define DAG(direct acyclic graph)**
 
 ```python
-start = EmptyOperator(task_id="start") // Just for testing
-say_hello = PythonOperator(
-  task_id="say_hello",
-  python_callable=_say_hello)
+start = EmptyOperator(task_id="start")
+step = EmptyOperator(task_id="step")
+end = EmptyOperator(task_id="end")
 
-get_rs_links = PythonOperator(
-  task_id="get_rs_links",
-  python_callable=_get_rs_links,
-  op_kwargs={"disease": "Stroke"})
+get_rs_links_from_diseases = [
+    PythonOperator(
+        task_id=f"get_rs_links_from_{disease}",
+        python_callable=_get_rs_links_from_diseases,
+        op_kwargs={"disease": disease},
+    ) for disease in utils.DISEASE_LIST]
 
-get_all_data_from_rs_links = PythonOperator(
-  task_id="get_all_data_from_rs_links",
-  python_callable=_get_all_data_from_rs_links,
-  op_kwargs={"rs_link": "rs17696736"})
+get_all_data_from_diseases = [
+    PythonOperator(
+        task_id=f"get_all_data_from_{disease}",
+        python_callable=_get_all_data_from_diseases,
+        op_kwargs={'affecting_disease': disease},
+    ) for disease in utils.DISEASE_LIST]
 
-ave_to_mongo_db = PythonOperator(
-  task_id="save_to_mongo_db",
-  python_callable=_svae_to_mongodb,
-  op_kwargs={"jsonData": "/opt/airflow/dags/SNPedia.json"})
+combine_data = PythonOperator(
+    task_id="combine_data",
+    python_callable=_combine_data,
+)
 
-end = EmptyOperator(task_id="end") // Just for testing
+save_to_mongo_db = PythonOperator(
+    task_id="save_to_mongo_db",
+    python_callable=_svae_to_mongodb,
+    op_kwargs={"jsonData": "/opt/airflow/dags/SNPedia.json"},
+)
 ```
 
 **complete the DAG**
 
 ```python
-start >> get_rs_links >> get_all_data_from_rs_links >> save_to_mongo_db >> end
+start >> get_rs_links_from_diseases >> step >>  get_all_data_from_diseases >> combine_data >> save_to_mongo_db >> end
 ```
 
 **the shape of data**
 
 ```ts
 {
-  affecting_disease: string,
+  affecting_disease: str,
   data: {
     GenoMagSummary:
-      { Geno: string,
-        Mag: string,
-        Summary: string
+      { Geno: str,
+        Mag: str,
+        Summary: str
       }[],
-    updatedAt: Date,
-    Reference: string,
-    Chromosome: string,
-    Position: string,
-    Gene: string,
-    "isA": string,
+    Reference: str,
+    Chromosome: str,
+    Position: str,
+    Gene: str,
+    "isA": str,
     "RelatedPublications": {
-      PMID: string,
-      description: string,
+      PMID: str,
+      description: str,
     }[],
-  }[]
+  }[],
+  updatedAt: DateTime,
 }[]
 ```
